@@ -26,7 +26,9 @@ The script implements a robust ETL (Extract, Transform, Load) pipeline with exte
 | **Projection grid** | Lambert Azimuthal Equal Area (LAEA Europe – EPSG:3035) |
 
 **Data:** The data was downloaded from this particular CDS site using the python API request code found in the txt file uploaded. https://cds.climate.copernicus.eu/datasets/sis-hydrology-meteorology-derived-projections?tab=download
+
 **Data Size: ~300gb of space is needed for an initial manual install from CDS, the pipeline incorporates robust memory management so it does not exceed this amount. 
+
 **Period:** 2025–2080
 
 ---
@@ -59,7 +61,7 @@ The script follows a structured ETL data pipeline:
 
 ### System Requirements
 - **R** (version 4.0 or higher)
-- Sufficient disk space for temporary files (NetCDF files are memory-intensive)
+- Sufficient disk space for temporary files (NetCDF files are memory-intensive, 16gb RAM reccomended)
 
 
 ### Required R Packages
